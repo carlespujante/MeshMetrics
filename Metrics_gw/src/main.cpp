@@ -2,7 +2,7 @@
 #include "LoraMesher.h"
 
 // 0 = deshabilitat (no WiFi/MQTT), 1 = habilitat
-#define GW_ENABLE_MQTT 0
+#define GW_ENABLE_MQTT 1
 
 // Optional WiFi/MQTT (gated by GW_ENABLE_MQTT)
 #if GW_ENABLE_MQTT
@@ -50,7 +50,7 @@ struct dataPacket {
 #endif
 
 #ifndef MQTT_BROKER
-#define MQTT_BROKER  "192.168.1.140"
+#define MQTT_BROKER  "192.168.1.142"
 #endif
 #ifndef MQTT_PORT
 #define MQTT_PORT    1883
